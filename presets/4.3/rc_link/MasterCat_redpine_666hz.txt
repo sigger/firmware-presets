@@ -1,0 +1,49 @@
+#$ TITLE: MasterCats Redpine 666Hz
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: Redpine, rc, link, 666hz, bind
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: Basic RC link settings for a 666hz Redpine SPI link incl. binding to MasterCats Transmitter
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Tx hardware ADC Filter is un-checked!
+#$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/148
+
+# bind it to my transmitter
+set frsky_spi_tx_id = 88,3,0
+set frsky_spi_offset = -34
+set frsky_spi_bind_hop_data = 128,235,185,142,48,106,227,134,194,2,64,211,196,29,130,216,68,144,218,182,40,25,175,91,113,34,87,121,229,233,190,165,132,163,14,5,247,123,192,200,173,202,12,56,251,46,249,95,148,0
+
+# map
+map TAER1234
+
+# set stick input min & max
+set min_check = 1005
+set max_check = 1995
+
+# rc smoothing should always be enabled with Redpine
+set rc_smoothing = ON
+
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 70
+set feedforward_jitter_factor = 5
+
+# sharper handling for racing:
+#$ OPTION BEGIN (UNCHECKED): Race feedforward settings
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 4
+#$ OPTION END
+
+# stronger smoothing for HD freestyle:
+#$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
+set feedforward_averaging = 3_POINT
+set feedforward_smooth_factor = 75
+set feedforward_jitter_factor = 9
+#$ OPTION END
+
+# even stronger smoothing for Cinematic flying (not for racing):
+#$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
+set feedforward_averaging = 3_POINT
+set feedforward_smooth_factor = 80
+set feedforward_jitter_factor = 12
+#$ OPTION END
