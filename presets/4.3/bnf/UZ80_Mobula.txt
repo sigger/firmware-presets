@@ -25,10 +25,12 @@ mcu_id 0067004c3230511530303938
 signature 
 
 # name: UZ80 Mobula6
-set name = UZ80 Mobula6
 
 # feature
 feature -RX_PARALLEL_PWM
+
+# serial
+serial 1 2048 115200 57600 0 115200
 
 # beeper
 beeper -GYRO_CALIBRATED
@@ -57,13 +59,10 @@ beeper -RC_SMOOTHING_INIT_FAIL
 # map
 map TAER1234
 
-# serial
-serial 1 2048 115200 57600 0 115200
-
 # aux
-aux 0 0 0 1300 2100 0 0
-aux 1 2 0 1700 2100 0 0
-aux 2 35 2 1700 2100 0 0
+aux 0 0 0 1750 2100 0 0
+aux 1 1 2 1750 2100 0 0
+aux 2 35 1 1750 2100 0 0
 
 # adjrange
 adjrange 0 0 3 900 2100 29 3 0 0
@@ -81,7 +80,13 @@ vtxtable powerlevels 3
 vtxtable powervalues 0 1 2
 vtxtable powerlabels 25 100 200
 
-# osd
+# master
+set acc_calibration = 62,14,0,1
+set min_check = 1005
+set max_check = 1995
+set rx_spi_protocol = REDPINE
+set yaw_motors_reversed = ON
+set small_angle = 180
 set osd_warn_arming_disable = OFF
 set osd_warn_batt_not_full = OFF
 set osd_warn_batt_warning = OFF
@@ -92,34 +97,32 @@ set osd_warn_gps_rescue_disabled = OFF
 set osd_rssi_pos = 6177
 set osd_link_quality_pos = 2084
 set osd_tim_2_pos = 6199
-set osd_throttle_pos = 2137
-set osd_current_pos = 2454
-set osd_mah_drawn_pos = 2402
-set osd_craft_name_pos = 2443
+set osd_throttle_pos = 2136
+set osd_current_pos = 2091
+set osd_mah_drawn_pos = 2450
+set osd_craft_name_pos = 395
 set osd_display_name_pos = 395
-set osd_pidrate_profile_pos = 2134
-set osd_warnings_pos = 6475
-set osd_avg_cell_voltage_pos = 6529
+set osd_pidrate_profile_pos = 120
+set osd_warnings_pos = 2314
+set osd_avg_cell_voltage_pos = 6540
 set osd_flip_arrow_pos = 2158
-set osd_core_temp_pos = 2113
+set osd_core_temp_pos = 65
 set osd_stat_tim_1 = ON
 set osd_stat_max_spd = OFF
 set osd_stat_endbatt = ON
 set osd_stat_battery = ON
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-
-# master
-set acc_calibration = 62,14,0,1
-set gyro_1_align_yaw = 900
-set yaw_motors_reversed = ON
-set small_angle = 180
 set vtx_band = 5
 set vtx_channel = 1
-set vtx_power = 3
+set vtx_power = 1
 set vtx_freq = 5658
 set vcd_video_system = NTSC
-
+set frsky_spi_tx_id = 88,3,0
+set frsky_spi_offset = -34
+set frsky_spi_bind_hop_data = 128,235,185,142,48,106,227,134,194,2,64,211,196,29,130,216,68,144,218,182,40,25,175,91,113,34,87,121,229,233,190,165,132,163,14,5,247,123,192,200,173,202,12,56,251,46,249,95,148,0
+set gyro_1_align_yaw = 900
+set name = UZ80 Mobula6
 
 profile 0
 
@@ -131,6 +134,9 @@ profile 2
 profile 0
 
 rateprofile 0
+
+# rateprofile 0
+set rates_type = KISS
 set roll_rc_rate = 198
 set pitch_rc_rate = 198
 set yaw_rc_rate = 165
