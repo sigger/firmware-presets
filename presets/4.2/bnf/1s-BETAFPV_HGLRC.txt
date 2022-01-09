@@ -1,0 +1,286 @@
+#$ TITLE: 1s-BETAFPV_HGLRC BNF
+#$ FIRMWARE_VERSION: 4.2
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: BNF
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: Bind & Fly settings of my 1s-BETAFPV_HGLRC
+
+defaults nosave
+
+###WARNING: NO CUSTOM DEFAULTS FOUND###
+
+# version
+# Betaflight / STM32F411 (S411) 4.2.9 Apr 27 2021 / 19:33:23 (e097f4ab7) MSP API: 1.43
+###ERROR: diff: NO CONFIG FOUND###
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVF411
+manufacturer_id BEFH
+mcu_id 002c004f3236510535383430
+signature 
+
+# name: 1s-BETAFPV_HGLRC
+
+# resources
+resource BEEPER 1 B02
+resource MOTOR 1 B04
+resource MOTOR 2 B05
+resource MOTOR 3 B06
+resource MOTOR 4 B07
+resource PPM 1 A03
+resource LED_STRIP 1 A08
+resource SERIAL_TX 1 A09
+resource SERIAL_TX 2 A02
+resource SERIAL_TX 11 B03
+resource SERIAL_TX 12 B10
+resource SERIAL_RX 1 A10
+resource SERIAL_RX 2 A03
+resource SERIAL_RX 11 B03
+resource SERIAL_RX 12 B10
+resource I2C_SCL 1 B08
+resource I2C_SDA 1 B09
+resource LED 1 C13
+resource LED 2 C14
+resource SPI_SCK 1 A05
+resource SPI_SCK 2 B13
+resource SPI_MISO 1 A06
+resource SPI_MISO 2 B14
+resource SPI_MOSI 1 A07
+resource SPI_MOSI 2 B15
+resource ADC_BATT 1 B00
+resource ADC_CURR 1 B01
+resource FLASH_CS 1 A00
+resource OSD_CS 1 B12
+resource GYRO_EXTI 1 A01
+resource GYRO_CS 1 A04
+resource USB_DETECT 1 C15
+
+# timer
+timer A03 AF3
+# pin A03: TIM9 CH2 (AF3)
+timer B04 AF2
+# pin B04: TIM3 CH1 (AF2)
+timer B05 AF2
+# pin B05: TIM3 CH2 (AF2)
+timer B06 AF2
+# pin B06: TIM4 CH1 (AF2)
+timer B07 AF2
+# pin B07: TIM4 CH2 (AF2)
+timer B03 AF1
+# pin B03: TIM2 CH2 (AF1)
+timer B10 AF1
+# pin B10: TIM2 CH3 (AF1)
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer A02 AF2
+# pin A02: TIM5 CH3 (AF2)
+timer A08 AF1
+# pin A08: TIM1 CH1 (AF1)
+
+# dma
+dma ADC 1 0
+# ADC 1: DMA2 Stream 0 Channel 0
+dma pin B04 0
+# pin B04: DMA1 Stream 4 Channel 5
+dma pin B05 0
+# pin B05: DMA1 Stream 5 Channel 5
+dma pin B06 0
+# pin B06: DMA1 Stream 0 Channel 2
+dma pin B07 0
+# pin B07: DMA1 Stream 3 Channel 2
+dma pin B03 0
+# pin B03: DMA1 Stream 6 Channel 3
+dma pin B10 0
+# pin B10: DMA1 Stream 1 Channel 3
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin A02 0
+# pin A02: DMA1 Stream 0 Channel 6
+dma pin A08 0
+# pin A08: DMA2 Stream 6 Channel 0
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature SOFTSERIAL
+feature TELEMETRY
+feature OSD
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# map
+map TAER1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 1 8192 115200 57600 0 115200
+serial 31 2048 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 35 2 1725 2100 0 0
+
+# adjrange
+adjrange 0 0 3 900 2100 29 3 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOW BAND L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+vtxtable powerlevels 4
+vtxtable powervalues 25 100 200 400
+vtxtable powerlabels 25 100 200 400
+
+# master
+set acc_calibration = -46,-12,-628,1
+set mag_hardware = NONE
+set baro_bustype = I2C
+set baro_i2c_device = 1
+set baro_hardware = NONE
+set min_check = 1005
+set max_check = 1995
+set serialrx_provider = CRSF
+set blackbox_device = SPIFLASH
+set dshot_idle_value = 650
+set dshot_burst = AUTO
+set dshot_bitbang = OFF
+set motor_pwm_protocol = DSHOT600
+set current_meter = ADC
+set battery_meter = ADC
+set ibata_scale = 470
+set beeper_inversion = ON
+set beeper_od = OFF
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_warn_arming_disable = OFF
+set osd_warn_batt_not_full = OFF
+set osd_warn_batt_warning = OFF
+set osd_warn_batt_critical = OFF
+set osd_warn_visual_beeper = OFF
+set osd_warn_core_temp = OFF
+set osd_warn_rc_smoothing = OFF
+set osd_warn_fail_safe = OFF
+set osd_warn_launch_control = OFF
+set osd_warn_no_gps_rescue = OFF
+set osd_warn_gps_rescue_disabled = OFF
+set osd_vbat_pos = 6508
+set osd_rssi_pos = 193
+set osd_link_quality_pos = 6178
+set osd_rssi_dbm_pos = 225
+set osd_tim_2_pos = 6199
+set osd_flymode_pos = 375
+set osd_throttle_pos = 2137
+set osd_crosshairs_pos = 237
+set osd_current_pos = 2092
+set osd_craft_name_pos = 395
+set osd_warnings_pos = 2346
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_stat_min_link_quality = ON
+set osd_stat_min_rssi_dbm = ON
+set system_hse_mhz = 8
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 1
+set vtx_freq = 5658
+set max7456_spi_bus = 2
+set dashboard_i2c_bus = 1
+set flash_spi_bus = 2
+set gyro_1_bustype = SPI
+set gyro_1_spibus = 1
+set gyro_1_sensor_align = CW180
+set gyro_1_align_yaw = 1800
+set name = 1s-BETAFPV_HGLRC
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 84
+set dyn_lpf_dterm_max_hz = 204
+set dterm_lowpass2_hz = 180
+set p_pitch = 78
+set i_pitch = 93
+set d_pitch = 40
+set f_pitch = 105
+set p_roll = 73
+set i_roll = 88
+set d_roll = 36
+set f_roll = 99
+set p_yaw = 78
+set i_yaw = 92
+set f_yaw = 99
+set d_min_roll = 0
+set d_min_pitch = 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 198
+set pitch_rc_rate = 198
+set yaw_rc_rate = 165
+set roll_expo = 21
+set pitch_expo = 21
+set yaw_expo = 21
+set roll_srate = 64
+set pitch_srate = 64
+set yaw_srate = 64
+set tpa_rate = 80
+set tpa_breakpoint = 1500
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
