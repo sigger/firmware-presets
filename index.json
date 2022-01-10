@@ -1608,7 +1608,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/MasterCat.txt",
-      "hash": "c966fd223323381d293aeb7c9323c473e7e4331385250bfc68f2b88d09c0b173",
+      "hash": "8fc295d7a630960128301f3c64bc480ad4dac0628faa8933b6d61557c0af8d78",
       "options": [],
       "title": "MasterCat rates",
       "firmware_version": [
@@ -1624,9 +1624,6 @@
       "author": "MasterCat",
       "description": [
         "MasterCats default rates for Freestyle with 1100 deg/sec for roll/pitch and 917 deg/sec for yaw. Inspired by Mr. Steele"
-      ],
-      "include": [
-        "presets/4.3/rates/defaults.txt"
       ]
     },
     {
