@@ -1,0 +1,109 @@
+#$ TITLE: UZ80 BNF
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: BNF
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: Bind & Fly settings of my UZ80
+
+defaults nosave
+
+
+# version
+# Betaflight / STM32F411 (S411) 4.3.0 Jan  9 2022 / 11:50:13 (ee8560af4) MSP API: 1.44
+# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: a074838b, date: 2021-06-14T21:36:54Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4FR
+manufacturer_id HAMO
+mcu_id 0067004c3230511530303938
+signature 
+
+# name: UZ80
+set name = UZ80
+
+# feature
+feature -RX_PARALLEL_PWM
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# modes
+#$ INCLUDE: presets/4.3/modes/MasterCat_redpine.txt
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# master
+set acc_calibration = 62,14,0,1
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gyro_1_align_yaw = 900
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+# rates
+#$ INCLUDE: presets/4.3/rates/MasterCat.txt
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# rc-link
+#$ INCLUDE: presets/4.3/rc_link/MasterCat_redpine_666hz.txt
+
+# vtxtable
+#$ INCLUDE: presets/4.3/vtx/AIO5in1.txt
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 1
+set vtx_freq = 5658
+set vcd_video_system = NTSC
+
+# osd
+#$ INCLUDE: presets/4.3/osd/MasterCat_redpine.txt
+
+# save configuration

@@ -1,7 +1,7 @@
-#$ TITLE: MasterCats Crossfire Modes and Adjustment settings
+#$ TITLE: TBD MasterCats Crossfire Modes and Adjustment settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: MODES
-#$ STATUS: MasterCat
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch, crsf
 #$ AUTHOR: MasterCat
 #$ DESCRIPTION: MasterCats Mode and adjustments for Crossfire

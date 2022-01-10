@@ -147,8 +147,10 @@
       "50hz",
       "533",
       "5in",
+      "5in1",
       "6 Inch",
       "6\"",
+      "666hz",
       "6S",
       "7 Inch",
       "7\"",
@@ -160,6 +162,7 @@
       "bardwell",
       "basic",
       "betaflight",
+      "bind",
       "blackbox",
       "BMI270",
       "BMSThomas",
@@ -175,6 +178,7 @@
       "clear",
       "control",
       "Crossfire",
+      "crsf",
       "ctzsnooze",
       "CTZsoonze",
       "default",
@@ -184,7 +188,7 @@
       "divimath",
       "DShot telemetry",
       "dynamic",
-      "ELRS",
+      "elrs",
       "EVO",
       "expert",
       "filter",
@@ -220,6 +224,7 @@
       "log",
       "logging",
       "mamba",
+      "MasterCat",
       "MinChan",
       "mode",
       "modes",
@@ -246,6 +251,7 @@
       "rc smoothing",
       "rc_link",
       "rc_smoothing",
+      "redpine",
       "reset",
       "reset statistics",
       "RPM",
@@ -428,8 +434,8 @@
       ]
     },
     {
-      "fullPath": "presets/4.3/bnf/UZ80_Mobula.txt",
-      "hash": "e0dc56d6d4eafad05fca3b306506af8290400857f98eed05aa50067f783be889",
+      "fullPath": "presets/4.3/bnf/UZ80.txt",
+      "hash": "8b0b13ee98e9c14f92820b61ae59d44788d9f15c8f3646105c75045a962a38be",
       "options": [],
       "title": "UZ80 BNF",
       "firmware_version": [
@@ -443,6 +449,13 @@
       "author": "MasterCat",
       "description": [
         "Bind & Fly settings of my UZ80"
+      ],
+      "include": [
+        "presets/4.3/modes/MasterCat_redpine.txt",
+        "presets/4.3/rates/MasterCat.txt",
+        "presets/4.3/rc_link/MasterCat_redpine_666hz.txt",
+        "presets/4.3/vtx/AIO5in1.txt",
+        "presets/4.3/osd/MasterCat_redpine.txt"
       ]
     },
     {
@@ -937,6 +950,81 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/modes/MasterCat_crsf.txt",
+      "hash": "a719463e7e601973d394964f928722356f0a538f17474b2a18fa1c22f9061fba",
+      "options": [],
+      "title": "TBD MasterCats Crossfire Modes and Adjustment settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "reset",
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch",
+        "crsf"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats Mode and adjustments for Crossfire"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/modes/MasterCat_elrs.txt",
+      "hash": "216b65066eda42bf8bc3728a33d89124b62495a5fd8f88c35f231be54ee9ae12",
+      "options": [],
+      "title": "TBD MasterCats ExpressLRS Modes and Adjustment settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "reset",
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch",
+        "elrs"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats Mode and adjustments for ExpressLRS"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/modes/MasterCat_redpine.txt",
+      "hash": "4b5ef7d85ccde504049fdee47d771b809d2630b4ac4fa476183f550cf25842a4",
+      "options": [],
+      "title": "MasterCats Redpine Modes and Adjustment settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "reset",
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch",
+        "redpine"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats Mode and adjustments for Redpine"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
       "options": [],
@@ -954,6 +1042,44 @@
       "author": "Betaflight",
       "description": [
         "Resets the OSD values back to Betaflight 4.3 defaults"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/osd/MasterCat_default.txt",
+      "hash": "0a4aa4d741b896e506f7f1ad2c3a7eb988e71600d81d1b90184a6a2e4e062c9c",
+      "options": [],
+      "title": "MasterCats Default OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "OSD"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Sets MasterCats default OSD settings"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/osd/MasterCat_redpine.txt",
+      "hash": "04b1249fb7a4cb4272d9f6e1fc76b00f2fe0dd6028e62d7374d7561b24726049",
+      "options": [],
+      "title": "MasterCats Default Redpine OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "OSD"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Sets MasterCats Redpine default OSD settings"
       ]
     },
     {
@@ -1481,6 +1607,29 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rates/MasterCat.txt",
+      "hash": "c966fd223323381d293aeb7c9323c473e7e4331385250bfc68f2b88d09c0b173",
+      "options": [],
+      "title": "MasterCat rates",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "MasterCat",
+        "rates",
+        "freestyle"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats default rates for Freestyle with 1100 deg/sec for roll/pitch and 917 deg/sec for yaw. Inspired by Mr. Steele"
+      ],
+      "include": [
+        "presets/4.3/rates/defaults.txt"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/rates/MinChan.txt",
       "hash": "2ec0aa7511e5642e28f82211380594a2efbf6e6e801942f1151d2fb5a9658c50",
       "options": [
@@ -1993,6 +2142,44 @@
         "Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries.",
         "Other options are provided for the intended flying style."
       ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/MasterCat_redpine_666hz.txt",
+      "hash": "f7b372cbea25dc19f1aacab75a04672936e4b86c9d880f59c4e0c9249b6b887c",
+      "options": [
+        {
+          "name": "Race feedforward settings",
+          "checked": false
+        },
+        {
+          "name": "HD Freestyle feedforward settings",
+          "checked": false
+        },
+        {
+          "name": "Cinematic feedforward settings",
+          "checked": false
+        }
+      ],
+      "title": "MasterCats Redpine 666Hz",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Redpine",
+        "rc",
+        "link",
+        "666hz",
+        "bind"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Basic RC link settings for a 666hz Redpine SPI link incl. binding to MasterCats Transmitter",
+        "WARNING: make ABSOLUTELY SURE that the Tx hardware ADC Filter is un-checked!",
+        "If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue."
+      ],
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/148"
     },
     {
       "fullPath": "presets/4.3/rc_link/Tracer_CFV2.txt",
@@ -3081,6 +3268,32 @@
       "include": [
         "presets/4.3/tune/defaults.txt",
         "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/vtx/AIO5in1.txt",
+      "hash": "26ffbbdf961dd6b108d7369b1d2f87a53c48409e218b8e3028b419e630d8cd87",
+      "options": [],
+      "title": "AIO 5in1 FC VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "IRC",
+        "tramp",
+        "5in1"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "VTX Table of a AIO 5in1 FC"
+      ],
+      "include_disclaimer": [
+        "misc/disclaimer/en/vtxtable.txt"
       ]
     },
     {
