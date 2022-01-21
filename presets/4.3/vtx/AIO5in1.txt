@@ -1,5 +1,4 @@
 #$ TITLE: AIO 5in1 FC VTX
-#$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
@@ -20,3 +19,6 @@ vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
 vtxtable powerlevels 3
 vtxtable powervalues 0 1 2
 vtxtable powerlabels 25 100 200
+
+# vtx-settings
+#$ INCLUDE: presets/4.3/other/MasterCat_vtx_settings.txt

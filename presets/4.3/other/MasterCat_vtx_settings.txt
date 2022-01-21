@@ -1,0 +1,13 @@
+#$ TITLE: MasterCat default VTX-settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: VTX
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  vtx, settings, vtx_settings, mastercat
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: MasterCats default VTX-settings
+
+# vtx-settings
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_freq = 5658
+set vtx_power = 2

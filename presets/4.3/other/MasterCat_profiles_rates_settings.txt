@@ -1,0 +1,33 @@
+#$ TITLE: MasterCats default profiles & rates settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults, profile_settings, rate_settings
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: MasterCats default profiles & rates settings
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+# rates
+#$ INCLUDE: presets/4.3/rates/MasterCat.txt
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
