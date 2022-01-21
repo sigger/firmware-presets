@@ -161,6 +161,7 @@
       "aux",
       "bardwell",
       "basic",
+      "beeper_settings",
       "betaflight",
       "bind",
       "blackbox",
@@ -224,7 +225,7 @@
       "log",
       "logging",
       "mamba",
-      "MasterCat",
+      "mastercat",
       "MinChan",
       "mode",
       "modes",
@@ -240,11 +241,13 @@
       "pid",
       "pro32",
       "profile",
+      "profile_settings",
       "quaddiction",
       "quick",
       "race",
       "race rates ctzsnooze actual",
       "racing",
+      "rate_settings",
       "rates",
       "rc",
       "rc link",
@@ -301,6 +304,7 @@
       "very noisy",
       "vtx",
       "vtx table",
+      "vtx_settings",
       "vtxtable",
       "world champion",
       "youtube"
@@ -435,7 +439,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/UZ80.txt",
-      "hash": "8b0b13ee98e9c14f92820b61ae59d44788d9f15c8f3646105c75045a962a38be",
+      "hash": "d92adc22192f8b21f99f8980e05e5638aef77145f7cf1af908fcfae01e7b0d7a",
       "options": [],
       "title": "UZ80 BNF",
       "firmware_version": [
@@ -452,6 +456,33 @@
       ],
       "include": [
         "presets/4.3/modes/MasterCat_redpine.txt",
+        "presets/4.3/other/MasterCat_no_beeper.txt",
+        "presets/4.3/other/MasterCat_profiles_rates_settings.txt",
+        "presets/4.3/rc_link/MasterCat_redpine_666hz.txt",
+        "presets/4.3/vtx/AIO5in1.txt",
+        "presets/4.3/osd/MasterCat_redpine.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Zeus25_AIO.txt",
+      "hash": "0d38e1f6975f6cea800acc9d1e3121732deb7dd8163acca2472bbe625d6bf06c",
+      "options": [],
+      "title": "Zeus25 AIO BNF",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "BNF"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Bind & Fly settings of my Zeus25 AIO BNF"
+      ],
+      "include": [
+        "presets/4.3/modes/MasterCat_redpine.txt",
+        "presets/4.3/other/MasterCat_no_beeper.txt",
         "presets/4.3/rates/MasterCat.txt",
         "presets/4.3/rc_link/MasterCat_redpine_666hz.txt",
         "presets/4.3/vtx/AIO5in1.txt",
@@ -1155,6 +1186,88 @@
       "discussion": "https://github.com/betaflight/firmware-presets/pull/110",
       "include": [
         "presets/4.3/other/reset_blackbox.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/other/MasterCat_beeper.txt",
+      "hash": "4ab190e31ba5701d61cedce18d8921a61ca71179b0a53fd40025d74e7cf6c590",
+      "options": [],
+      "title": "MasterCats default beeper settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "beeper_settings"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats default beeper settings"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/other/MasterCat_no_beeper.txt",
+      "hash": "dcad97f7aca5a6b2c74967c5ea3cf01a6b011d63a7b2fb10801f45a2ef6ab4de",
+      "options": [],
+      "title": "Disable beeper",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "beeper_settings"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Disable all beeper settings"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/other/MasterCat_profiles_rates_settings.txt",
+      "hash": "1d51a1a8f12fd6547e07e53f6f462d36d4073b3bf23e7678b41c5cf5ab992c18",
+      "options": [],
+      "title": "MasterCats default profiles & rates settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "profile_settings",
+        "rate_settings"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats default profiles & rates settings"
+      ],
+      "include": [
+        "presets/4.3/rates/MasterCat.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/other/MasterCat_vtx_settings.txt",
+      "hash": "50778dc3897fdf726bb5c1132342efa4e73f11b337ad4858f4eca07b6726559c",
+      "options": [],
+      "title": "MasterCat default VTX-settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "settings",
+        "vtx_settings",
+        "mastercat"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats default VTX-settings"
       ]
     },
     {
@@ -3269,11 +3382,10 @@
     },
     {
       "fullPath": "presets/4.3/vtx/AIO5in1.txt",
-      "hash": "26ffbbdf961dd6b108d7369b1d2f87a53c48409e218b8e3028b419e630d8cd87",
+      "hash": "c924d4dfde6c706bcf521c2f31c56027b98d1971a596d6b603952ec607c398a8",
       "options": [],
       "title": "AIO 5in1 FC VTX",
       "firmware_version": [
-        "4.2",
         "4.3"
       ],
       "category": "VTX",
@@ -3291,6 +3403,9 @@
       ],
       "include_disclaimer": [
         "misc/disclaimer/en/vtxtable.txt"
+      ],
+      "include": [
+        "presets/4.3/other/MasterCat_vtx_settings.txt"
       ]
     },
     {
