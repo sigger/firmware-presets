@@ -439,7 +439,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/1s-BETAFPV_HGLRC.txt",
-      "hash": "d0d2ca6fedf99b1ab7435530340178cc23d00ac85380328268257e56c96e6b57",
+      "hash": "24a5235f554a78600d03a8285d671451cbd72424af8203d19272e598a85ec3a0",
       "options": [],
       "title": "1s-BETAFPV_HGLRC BNF",
       "firmware_version": [
@@ -3568,7 +3568,7 @@
     },
     {
       "fullPath": "presets/4.3/vtx/eachine_nano_tramp.txt",
-      "hash": "bbc82319ae10cfde7e6fa0c9ff00178b2ea974ddf2937f205ab613fa47657aa2",
+      "hash": "fb9cfe5d5efaafa93451eb50493dba92fc1566b0287c8a36fa9c54e49d1a62fe",
       "options": [],
       "title": "Eachine Nano VTX (V1 & V2)",
       "firmware_version": [

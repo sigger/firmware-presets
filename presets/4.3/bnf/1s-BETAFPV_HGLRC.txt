@@ -17,12 +17,11 @@ defaults nosave
 batch start
 
 # reset configuration to default settings
-defaults nosave
 
-board_name BETAFPVF411
-manufacturer_id BEFH
-mcu_id 002c004f3236510535383430
-signature 
+# board_name BETAFPVF411
+# manufacturer_id BEFH
+# mcu_id 002c004f3236510535383430
+# signature 
 
 # name: 1s-BETAFPV_HGLRC
 set name = 1s-BETAFPV_HGLRC
