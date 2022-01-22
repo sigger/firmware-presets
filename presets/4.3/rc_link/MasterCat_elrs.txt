@@ -1,0 +1,17 @@
+#$ TITLE: MasterCats ExpressLRS
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: elrs, rc, link, 500hz
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: MasterCats basic RC link settings for a 500hz ELRS link
+
+# map
+map TAER1234
+
+# set stick input min & max
+set min_check = 1005
+set max_check = 1995
+
+# ELRS settings
+#$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt

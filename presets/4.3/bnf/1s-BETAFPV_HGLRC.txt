@@ -1,0 +1,65 @@
+#$ TITLE: 1s-BETAFPV_HGLRC BNF
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: BNF
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: Bind & Fly settings of my 1s-BETAFPV_HGLRC
+
+defaults nosave
+
+
+# version
+# Betaflight / STM32F411 (S411) 4.3.0 Jan  9 2022 / 11:50:13 (ee8560af4) MSP API: 1.44
+# config: manufacturer_id: BEFH, board_name: BETAFPVF411, version: 5e96c97e, date: 2021-09-22T21:01:22Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVF411
+manufacturer_id BEFH
+mcu_id 002c004f3236510535383430
+signature 
+
+# name: 1s-BETAFPV_HGLRC
+set name = 1s-BETAFPV_HGLRC
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature TELEMETRY
+feature OSD
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 1 8192 115200 57600 0 115200
+
+# modes
+#$ INCLUDE: presets/4.3/modes/MasterCat_elrs.txt
+
+# beeper
+#$ INCLUDE: presets/4.3/other/MasterCat_no_beeper.txt
+
+# master
+set acc_calibration = 23,-63,-584,1
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gyro_1_align_yaw = 900
+
+# profiles & rates
+#$ INCLUDE: presets/4.3/other/MasterCat_profiles_rates_settings.txt
+
+# rc-link
+#$ INCLUDE: presets/4.3/rc_link/MasterCat_elrs.txt
+
+# vtxtable
+#$ INCLUDE: presets/4.3/vtx/eachine_nano_tramp.txt
+set vcd_video_system = NTSC
+
+# osd
+#$ INCLUDE: presets/4.3/osd/MasterCat_toothpick_elrs.txt
+
+# save configuration

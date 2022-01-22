@@ -1,0 +1,38 @@
+#$ TITLE: MasterCats Default Redpine OSD settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults, OSD
+#$ AUTHOR: MasterCat
+#$ DESCRIPTION: Sets MasterCats Redpine default OSD settings
+
+set osd_warn_arming_disable = OFF
+set osd_warn_batt_not_full = OFF
+set osd_warn_batt_warning = OFF
+set osd_warn_batt_critical = OFF
+set osd_warn_visual_beeper = OFF
+set osd_warn_core_temp = OFF
+set osd_warn_rc_smoothing = OFF
+set osd_warn_fail_safe = OFF
+set osd_warn_launch_control = OFF
+set osd_warn_no_gps_rescue = OFF
+set osd_warn_gps_rescue_disabled = OFF
+set osd_vbat_pos = 6508
+set osd_rssi_pos = 193
+set osd_link_quality_pos = 6178
+set osd_rssi_dbm_pos = 225
+set osd_tim_2_pos = 6199
+set osd_flymode_pos = 375
+set osd_throttle_pos = 2137
+set osd_crosshairs_pos = 237
+set osd_current_pos = 2092
+set osd_craft_name_pos = 395
+set osd_warnings_pos = 2346
+set osd_flip_arrow_pos = 6223
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_stat_min_link_quality = ON
+set osd_stat_min_rssi_dbm = ON

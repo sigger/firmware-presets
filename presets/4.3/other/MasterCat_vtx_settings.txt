@@ -10,4 +10,4 @@
 set vtx_band = 5
 set vtx_channel = 1
 set vtx_freq = 5658
-set vtx_power = 2
+set vtx_power = 1
