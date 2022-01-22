@@ -313,7 +313,7 @@
   "presets": [
     {
       "fullPath": "presets/4.2/bnf/1s-BETAFPV_HGLRC.txt",
-      "hash": "e905443ad09c63ecf15af474f9785f8e38d9ac682c26e5ad88577cd58e61fdc2",
+      "hash": "9c3b72e2df781a8605a2fe25e65328edc5e1ea1dfad7910c10522b46eeb350aa",
       "options": [],
       "title": "1s-BETAFPV_HGLRC BNF",
       "firmware_version": [
@@ -435,6 +435,32 @@
       "author": "MasterCat",
       "description": [
         "Bind & Fly settings of my Zeus25 AIO"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/bnf/1s-BETAFPV_HGLRC.txt",
+      "hash": "35b2bf1790297099b75bfa503ac6694639c2ca0b64b00cf7476675f258f69053",
+      "options": [],
+      "title": "1s-BETAFPV_HGLRC BNF",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "BNF"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Bind & Fly settings of my 1s-BETAFPV_HGLRC"
+      ],
+      "include": [
+        "presets/4.3/modes/MasterCat_elrs.txt",
+        "presets/4.3/other/MasterCat_no_beeper.txt",
+        "presets/4.3/other/MasterCat_profiles_rates_settings.txt",
+        "presets/4.3/rc_link/MasterCat_elrs.txt",
+        "presets/4.3/vtx/eachine_nano_tramp.txt",
+        "presets/4.3/osd/MasterCat_toothpick_elrs.txt"
       ]
     },
     {
@@ -1007,9 +1033,9 @@
     },
     {
       "fullPath": "presets/4.3/modes/MasterCat_elrs.txt",
-      "hash": "216b65066eda42bf8bc3728a33d89124b62495a5fd8f88c35f231be54ee9ae12",
+      "hash": "080fa24aca2f41c36188292ba07c639e136c0719dacf8f5298a6773514537ab7",
       "options": [],
-      "title": "TBD MasterCats ExpressLRS Modes and Adjustment settings",
+      "title": "MasterCats ExpressLRS Modes and Adjustment settings",
       "firmware_version": [
         "4.3"
       ],
@@ -1097,6 +1123,25 @@
     {
       "fullPath": "presets/4.3/osd/MasterCat_redpine.txt",
       "hash": "04b1249fb7a4cb4272d9f6e1fc76b00f2fe0dd6028e62d7374d7561b24726049",
+      "options": [],
+      "title": "MasterCats Default Redpine OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "OSD"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "Sets MasterCats Redpine default OSD settings"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/osd/MasterCat_toothpick_elrs.txt",
+      "hash": "729f4f89522a16c4e178ca144c8b14ae849d22c043f0d61fb2d7912409866e81",
       "options": [],
       "title": "MasterCats Default Redpine OSD settings",
       "firmware_version": [
@@ -1251,7 +1296,7 @@
     },
     {
       "fullPath": "presets/4.3/other/MasterCat_vtx_settings.txt",
-      "hash": "50778dc3897fdf726bb5c1132342efa4e73f11b337ad4858f4eca07b6726559c",
+      "hash": "119df91640cd07fc08c3a856173b9945adee51d6360302ff780dfca3bbcab1dd",
       "options": [],
       "title": "MasterCat default VTX-settings",
       "firmware_version": [
@@ -2251,6 +2296,30 @@
         "Units default to metric. Telemetry defaults to non-inverted and half-duple. Both can be changed with checkbox.",
         "Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries.",
         "Other options are provided for the intended flying style."
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/MasterCat_elrs.txt",
+      "hash": "4615028b91ac22c37b916c4cad9f3168459baa3a037b9dbccc1e092c1ace7506",
+      "options": [],
+      "title": "MasterCats ExpressLRS",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "status": "COMMUNITY",
+      "keywords": [
+        "elrs",
+        "rc",
+        "link",
+        "500hz"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "MasterCats basic RC link settings for a 500hz ELRS link"
+      ],
+      "include": [
+        "presets/4.3/rc_link/elrs_500hz.txt"
       ]
     },
     {
@@ -3495,6 +3564,34 @@
       "discussion": "https://github.com/betaflight/firmware-presets/pull/107",
       "include": [
         "presets/4.3/vtx/defaults_vtx_tables.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/vtx/eachine_nano_tramp.txt",
+      "hash": "bbc82319ae10cfde7e6fa0c9ff00178b2ea974ddf2937f205ab613fa47657aa2",
+      "options": [],
+      "title": "Eachine Nano VTX (V1 & V2)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "IRC",
+        "tramp",
+        "5in1"
+      ],
+      "author": "MasterCat",
+      "description": [
+        "VTX Table of a Eachine Nano VTX (V1 & V2)"
+      ],
+      "include_disclaimer": [
+        "misc/disclaimer/en/vtxtable.txt"
+      ],
+      "include": [
+        "presets/4.3/other/MasterCat_vtx_settings.txt"
       ]
     },
     {
