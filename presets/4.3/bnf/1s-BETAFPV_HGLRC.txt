@@ -46,6 +46,8 @@ set gyro_1_align_yaw = 900
 set current_meter = ADC
 set battery_meter = ADC
 set ibata_scale = 470
+set blackbox_device = NONE
+set report_cell_voltage = ON
 
 # profiles & rates
 #$ INCLUDE: presets/4.3/other/MasterCat_profiles_rates_settings.txt
