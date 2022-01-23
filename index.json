@@ -313,7 +313,7 @@
   "presets": [
     {
       "fullPath": "presets/4.2/bnf/1s-BETAFPV_HGLRC.txt",
-      "hash": "9c3b72e2df781a8605a2fe25e65328edc5e1ea1dfad7910c10522b46eeb350aa",
+      "hash": "54a762ccbaae6094fcf0db17c198ed562f8c9d7e098c51bb392e1828811f9456",
       "options": [],
       "title": "1s-BETAFPV_HGLRC BNF",
       "firmware_version": [
@@ -439,7 +439,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/1s-BETAFPV_HGLRC.txt",
-      "hash": "24a5235f554a78600d03a8285d671451cbd72424af8203d19272e598a85ec3a0",
+      "hash": "8057ae5d7325d7130f105715ddd4f5df50595c5845bc4a5f3fdb6fce4c792fe4",
       "options": [],
       "title": "1s-BETAFPV_HGLRC BNF",
       "firmware_version": [
